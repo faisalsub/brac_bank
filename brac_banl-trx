@@ -1,0 +1,22 @@
+transaction:
+  id: "TXN-20250929-0001"
+  timestamp: "2025-09-29T11:30:00Z"
+  type: "debit"   # debit | credit | transfer
+  amount:
+    currency: "USD"
+    value: 150.75
+  status: "pending"   # pending | completed | failed
+  source_account:
+    account_number: "1234567890"
+    account_holder: "John Doe"
+    bank: "Bank of America"
+    branch_code: "BOFAUS3N"
+  destination_account:
+    account_number: "9876543210"
+    account_holder: "Alice Smith"
+    bank: "Chase Bank"
+    branch_code: "CHASUS33"
+  metadata:
+    reference: "Invoice-2025-0901"
+    channel: "mobile_app"   # atm | online_banking | mobile_app | branch
+    remarks: "Payment for September invoice"
